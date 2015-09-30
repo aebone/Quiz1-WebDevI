@@ -1,17 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @post.name %>
-</p>
 
-<p>
+  <h3><strong>Name:</strong>
+  <%= @post.name %>
+  <h3>
+
+
+<h2>
   <strong>Title:</strong>
   <%= @post.title %>
-</p>
+</h2>
 
 <p>
-  <strong>Content:</strong>
   <%= @post.content %>
 </p>
 
@@ -30,7 +30,7 @@
     <%= f.submit %>
   </div>
 <% end %>
-
+<hr>
 <h2>Comments</h2>
 <% if @post.comments.length > 0 %>
   <% @post.comments.each do |comment| %>
