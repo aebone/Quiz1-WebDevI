@@ -3,6 +3,14 @@ class PostsController < ApplicationController
 
   # GET /posts
   # GET /posts.json
+  def hello
+    @hello = "Hello World!"
+  end
+
+  def goodbye
+    @goodbye = "Goodbye World!"
+  end
+
   def index
     @posts = Post.all
   end
